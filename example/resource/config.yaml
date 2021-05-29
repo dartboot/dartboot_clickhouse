@@ -1,0 +1,23 @@
+########################################################
+# profile配置
+#profile:
+#  active: dev
+
+########################################################
+# 应用配置
+app:
+  name: dartboot # 应用名可以自定义修改
+
+########################################################
+# 服务配置
+server:
+  port: 8701 # 端口可以自定义修改
+  context-path: /dartboot # 上下文可以自定义修改
+
+database:
+  clickhouse:
+    host: 192.168.1.225
+    port: 8123
+    db: ksb_dataware
+    print-sql: false
+    max-pool-size: 20
